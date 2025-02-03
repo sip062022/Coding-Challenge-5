@@ -53,3 +53,11 @@ console.log("Total Sales:", total); // Displays total sales
 let customers = ["Alice", "Bob", "Charlie", "David"]; // Declares customers array
 let person = customers.find(customers => customers == "Charlie"); // Uses .find() to find string that matches "Charlie"
 console.log("Customer:" , person); // Displays the name "Charlie"
+
+// Task 8: Tax Calculation //
+
+function calculateTax(amount, taxRate) {  // defines the function and its variables
+    return amount*taxRate; // defines formula to be used
+}
+
+console.log(`Tax Amount: $${calculateTax(49,0.07)}`);  // Displays result at a template literal and inserts the formula's values directly into the console.log
