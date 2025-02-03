@@ -2,7 +2,7 @@
 
  let customer = {name: "John Doe", age: 35, email: "john.doe@email.com"}; // Declares customer object
  for (let property in customer) {  // Declares for loop for the properties within customer object
-    console.log(`${property}: ${customer[property]}`)  // Displays property followed by associated property
+    console.log(`${property}: ${customer[property]}`)  // Displays property name followed by associated property
  };
 
  // Task 2: Object Methods //
@@ -26,7 +26,7 @@ cartItems.pop(); // Removes last item from list (butter)
 cartItems.unshift("eggs"); // Adds "eggs" to the beginning of the list
 cartItems.shift(); // Removes first item from list (eggs)
 
-console.log(`Items in your cart: ${cartItems.join(', ')}`); // Displays the updated list while using the .join() to create spacing
+console.log("Items in your cart:" , cartItems); // Displays the updated list
 
 // Task 4: Map Method //
 
@@ -46,7 +46,7 @@ console.log("Inventory:", inStock); // Displays in-stock inventory with stock > 
 
 let sales = [500, 300, 200, 400]; // Declares sales array
 let total = sales.reduce((sum, sales) => sum + sales, 0); // Uses .reduce() to sum sales numbers from the array
-console.log("Total Sales:", total); // Displays total sales
+console.log("Total Sales: $", total); // Displays total sales
 
 // Task 7: find() Method //
 
@@ -57,7 +57,7 @@ console.log("Customer:" , person); // Displays the name "Charlie"
 // Task 8: Tax Calculation //
 
 function calculateTax(amount, taxRate) {  // defines the function and its variables
-    return amount*taxRate; // defines formula to be used
+    return amount*taxRate; // defines formula to be used (amount times tax rate)
 }
 
 console.log(`Tax Amount: $${calculateTax(49,0.07)}`);  // Displays result at a template literal and inserts the formula's values directly into the console.log
