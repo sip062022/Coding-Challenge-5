@@ -17,3 +17,13 @@
 };  
 
 console.log(order.displayOrder());  // Displays the results from the method.
+
+// Task 3: Array Manipulation //
+
+let cartItems = ["yogurt" , "milk" , "cheese"]; // Declares the array
+cartItems.push("butter"); // Adds new product 'butter'to the end of the array
+cartItems.pop(); // Removes last item from list (butter)
+cartItems.unshift("eggs"); // Adds "eggs" to the beginning of the list
+cartItems.shift(); // Removes first item from list (eggs)
+
+console.log(`Items in your cart: ${cartItems.join(', ')}`); // Displays the updated list while using the .join() to create spacing
