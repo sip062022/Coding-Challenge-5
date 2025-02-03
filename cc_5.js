@@ -61,3 +61,11 @@ function calculateTax(amount, taxRate) {  // defines the function and its variab
 }
 
 console.log(`Tax Amount: $${calculateTax(49,0.07)}`);  // Displays result at a template literal and inserts the formula's values directly into the console.log
+
+// Task 9: Function Expression //
+
+function applyDiscount(price, discount) { // defines the function and its variables
+    return price*(1-discount); // defines the formula, with 1-discount because this creates the actual sales price post-discount
+}
+
+console.log(`Discounted Price: $${applyDiscount(200,.10)}`); // Displays results as temlpate literal and inserts variables into the formula to get the discounted price
