@@ -47,3 +47,9 @@ console.log("Inventory:", inStock); // Displays in-stock inventory with stock > 
 let sales = [500, 300, 200, 400]; // Declares sales array
 let total = sales.reduce((sum, sales) => sum + sales, 0); // Uses .reduce() to sum sales numbers from the array
 console.log("Total Sales:", total); // Displays total sales
+
+// Task 7: find() Method //
+
+let customers = ["Alice", "Bob", "Charlie", "David"]; // Declares customers array
+let person = customers.find(customers => customers == "Charlie"); // Uses .find() to find string that matches "Charlie"
+console.log("Customer:" , person); // Displays the name "Charlie"
