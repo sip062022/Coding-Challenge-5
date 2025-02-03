@@ -41,3 +41,9 @@ let inventory = [5, 0, 12, 8, 0]; // Declares inventory array
 let inStock = inventory.filter(inventory => inventory > 0); // Uses .filter() to remove stock with inventory of 0
 
 console.log("Inventory:", inStock); // Displays in-stock inventory with stock > 0
+
+// Task 6: Reduce Method //
+
+let sales = [500, 300, 200, 400]; // Declares sales array
+let total = sales.reduce((sum, sales) => sum + sales, 0); // Uses .reduce() to sum sales numbers from the array
+console.log("Total Sales:", total); // Displays total sales
