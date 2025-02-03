@@ -34,3 +34,10 @@ let prices = [100, 200, 300]; // Declares prices array
 let discountedPrices = prices.map(price => price * 0.9);  // map method applies 10% discount to each price
 
 console.log(`Discounted Prices: $${discountedPrices.join(', $')}`); // Displays discounted prices using template literal and join(, $) to create proper spacing
+
+// Task 5: Filter Method //
+
+let inventory = [5, 0, 12, 8, 0]; // Declares inventory array
+let inStock = inventory.filter(inventory => inventory > 0); // Uses .filter() to remove stock with inventory of 0
+
+console.log("Inventory:", inStock); // Displays in-stock inventory with stock > 0
