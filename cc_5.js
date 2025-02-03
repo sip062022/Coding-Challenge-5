@@ -27,3 +27,10 @@ cartItems.unshift("eggs"); // Adds "eggs" to the beginning of the list
 cartItems.shift(); // Removes first item from list (eggs)
 
 console.log(`Items in your cart: ${cartItems.join(', ')}`); // Displays the updated list while using the .join() to create spacing
+
+// Task 4: Map Method //
+
+let prices = [100, 200, 300]; // Declares prices array
+let discountedPrices = prices.map(price => price * 0.9);  // map method applies 10% discount to each price
+
+console.log(`Discounted Prices: $${discountedPrices.join(', $')}`); // Displays discounted prices using template literal and join(, $) to create proper spacing
